@@ -45,7 +45,6 @@ public class FactureServiceMock {
     public void testRetrieveAllFactures() {
         Mockito.when(factureRepository.findById(1L)).thenReturn(java.util.Optional.of(facture));
         float factureFound = facture.getMontantFacture();
-        Assertions.assertNotNull(factureFound);
-    }
+        Assertions.assertEquals(factureFound, facture.getMontantFacture());}
 
 }
