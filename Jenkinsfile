@@ -66,7 +66,7 @@ pipeline {
         
         stage('Build backend docker image') {
             steps {
-                sh 'docker build -t superbatata/Achat-release .'
+                sh 'docker build -t superbatata/achat-service .'
             }
         }
         
@@ -79,7 +79,7 @@ pipeline {
               sh 'docker login -u superbatata -p 181JMT1578'
 
              
-              sh 'docker push superbatata/Achat-release'
+              sh 'docker push superbatata/achat-service'
 
             }
 
