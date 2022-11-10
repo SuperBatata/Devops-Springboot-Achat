@@ -56,7 +56,7 @@ pipeline {
                  credentialsId: 'nexus',
                  groupId: 'tn.esprit.rh',
                  nexusUrl: 'localhost:8081',
-                 nexusVersion: 'nexus',
+                 nexusVersion: 'nexus3',
                  protocol: 'http',
                  repository: 'Achat-release',
                  version: '1.0.0'
